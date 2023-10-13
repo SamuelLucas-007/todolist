@@ -13,7 +13,7 @@ RUN apt-get install maven -y
 RUN mvn clean install
 
 # Switch to the final image stage
-FROM ubuntu:latest
+FROM openjdk:17-jdk-slim
 
 # Expose port 8080 (if your application needs this port)
 EXPOSE 8080
